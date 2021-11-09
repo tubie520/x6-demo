@@ -1,6 +1,6 @@
 <template>
   <div class="node" :data-id="data.id">
-    <div>{{  data.id }}</div>
+    <div>id: {{  data.id }}</div>
     <div class="node-data-list">
       <div
         v-for="item in relations"
@@ -34,5 +34,11 @@ onMounted(() => {
   min-height: 200px;
   background: #fff;
   border: 1px solid red;
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+.node-data-item {
+  color: #333;
 }
 </style>
